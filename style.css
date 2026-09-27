@@ -1,0 +1,14 @@
+/* TODO: style rules go here */
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+body {
+    font-family: sans-serif;
+}
