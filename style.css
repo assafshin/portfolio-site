@@ -4,6 +4,7 @@
   --ink: #1c1c1c;
   --muted: #767671;
   --line: #e4e2da;
+  --gutter: 6vw;
 }
 
 * {
@@ -21,6 +22,8 @@ body {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 h1, h2 {
@@ -93,7 +96,7 @@ h1, h2 {
 .about {
   max-width: 640px;
   margin: 0 auto;
-  padding: 60px 8vw;
+  padding: 60px 0;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -103,6 +106,7 @@ h1, h2 {
 .work {
   display: flex;
   flex-direction: column;
+  gap: 28px;
 }
 
 .project {
@@ -114,7 +118,7 @@ h1, h2 {
 .js-enabled .project {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 1.4s ease, transform 1.4s ease;
 }
 
 .js-enabled .project.is-visible {
@@ -131,11 +135,12 @@ h1, h2 {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 6px;
 }
 
 .project-text {
   flex: 1;
-  padding: 60px 6vw;
+  padding: 60px 0 60px 6vw;
   max-width: 720px;
 }
 
@@ -171,20 +176,13 @@ h1, h2 {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 2px;
-}
-
-.project-gallery.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 16px;
+  border-radius: 6px;
 }
 
 /* --- Contact & footer --- */
 
 .contact {
-  padding: 60px 8vw;
+  padding: 60px 0;
   text-align: center;
   border-top: 1px solid var(--line);
 }
