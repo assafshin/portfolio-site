@@ -17,6 +17,12 @@ body {
   background: var(--cream);
 }
 
+.site-header, main, footer {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1, h2 {
   font-family: "Jost", sans-serif;
   font-weight: 300;
@@ -56,9 +62,9 @@ h1, h2 {
 }
 
 .hero-title {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 2.4rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
   color: var(--ink);
   margin: 10px 0 0;
 }
@@ -95,6 +101,17 @@ h1, h2 {
   display: flex;
   align-items: flex-start;
   border-top: 1px solid var(--line);
+}
+
+.js-enabled .project {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js-enabled .project.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-photo {
@@ -147,6 +164,13 @@ h1, h2 {
   height: auto;
   display: block;
   border-radius: 2px;
+}
+
+.project-gallery.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 16px;
 }
 
 /* --- Contact & footer --- */
