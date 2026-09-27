@@ -17,7 +17,7 @@ body {
   background: var(--cream);
 }
 
-.site-header, main, footer {
+.site-header, main {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
@@ -40,8 +40,16 @@ h1, h2 {
 
 .site-header nav {
   display: flex;
-  gap: 28px;
-  padding: 32px 8vw 0;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 280px;
+  margin: 32px auto 0;
+}
+
+@media (max-width: 700px) {
+  .site-header nav {
+    width: 80%;
+  }
 }
 
 .hero {
@@ -183,13 +191,6 @@ h1, h2 {
 
 .contact a {
   color: var(--ink);
-}
-
-footer {
-  padding: 24px 8vw;
-  text-align: right;
-  color: var(--muted);
-  font-size: 0.85rem;
 }
 
 /* --- Responsive: stack photo above text on narrow screens --- */
