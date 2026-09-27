@@ -1,3 +1,1 @@
-document.querySelector("#toggle-btn").addEventListener("click", function() {
-  document.querySelector("#extra-info").style.display = "block";
-});
+// No interactivity yet — kept as a hook for later (e.g. smooth-scroll nav, lightbox gallery).

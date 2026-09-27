@@ -2,28 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TODO: your name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assaf Shinfeld — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>אסף שינפלד</h1>
-  <p>מפעיל רחפנים, מעצב, ולומד לבנות דברים</p>
+<header class="site-header">
+  <h1>Assaf Shinfeld</h1>
+  <p class="tagline">Industrial Design</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
-<nav>
-<a href="#about">אודות</a>
-<a href="#contact">צור קשר</a>
-</nav>
+
 <main>
-  <section id="about">
-    <p>סקרן, הרפתקן, אוהב את החיים
-      אוהב לגלות את העולם
+
+  <section id="about" class="about">
+    <p>
+      Bezalel Academy-trained industrial designer. I work across furniture and product design,
+      with a focus on upcycled materials, honest construction, and objects that earn their place
+      in a home. Nine projects from that period are collected below.
     </p>
-    <button id="toggle-btn">More about me</button>
-    <p id="extra-info" style="display: none;">One more sentence you want to add.</p>
   </section>
+
+  <section id="work" class="work">
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/aura-1.jpg" alt="AURA chair made from an upcycled kitesurfing kite">
+      </div>
+      <div class="project-text">
+        <h2>01. AURA <span class="divider">|</span> One of A Kite</h2>
+        <p>In kitesurfing, the conditions at sea and constant technological advancements lead to a high turnover of equipment and textile waste of unique size, material, and graphics.</p>
+        <p>Aura gives the discarded kites a second life as furniture, using it for upholstery as well as inner wires and filling. Each item is one of a kind, has a unique individual look thanks to the varying patterns of the original material, and sports a label indicating it is an upcycled item.</p>
+        <p>The project sets out to produce quality products from &ldquo;waste&rdquo;, that can be presented proudly in our homes.</p>
+        <div class="project-gallery">
+          <img src="images/aura-2.jpg" alt="AURA chair, detail view">
+          <img src="images/aura-3.jpg" alt="AURA chair, side view">
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/wooden-stool.jpg" alt="Wooden stool made of bent oak strips">
+      </div>
+      <div class="project-text">
+        <h2>02. Wooden Stool</h2>
+        <p>The purpose of this project was to create a stool that had a new appearance made of familiar material.</p>
+        <p>The strips of wood were cut thin, bent with steam and glued in a cross, creating a comb shape. Every overlapping point of the strips was fixed with a brass rod, preventing the layers from sliding between one another.</p>
+        <p class="materials">Materials: Oak and brass rod.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/mysun.jpg" alt="MySun light therapy floor lamp in a room">
+      </div>
+      <div class="project-text">
+        <h2>03. MySun</h2>
+        <p>A combination of heat and light inspired by the sun.</p>
+        <p>A product intended for improving well-being, combines a heating element with Light Therapy lighting that in daily exposure has been found to be effective in treating SAD (seasonal affective disorder) &mdash; a type of depression caused by a lack of exposure to sunlight and is increasingly common around the world.</p>
+        <p>The shape was born with the ambition to create a comforting and encouraging tool that can be taken throughout the home and improve the mood, while maintaining aesthetics and avoiding the appearance of a medical appliance. The mobility and lightness, as well as the adjustable lighting height, allow for comfortable and free use throughout the house.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/plane.jpg" alt="Plane, a minimalist table built from intersecting planes">
+      </div>
+      <div class="project-text">
+        <h2>04. Plane</h2>
+        <p>A project whose purpose is to examine what is the minimum required to create a living room table, as free of unnecessary details as possible, through construction in three planes in the space which intersect and produce a stable and useful three-dimensional structure.</p>
+        <p>The table can be disassembled, and in this way illustrates the scarcity of the material it is made of and the minimal space it occupies. With the help of these features it was possible to examine the minimum point &mdash; in material and visibility.</p>
+        <p class="materials">Materials: Iron rod, Aluminum plate.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/bamboo-cutlery.jpg" alt="Cutlery set made from upcycled bamboo cooking spoons">
+      </div>
+      <div class="project-text">
+        <h2>05. Bamboo Cutlery</h2>
+        <p>This design is based on the idea of reusing cheap bamboo cooking spoons to create a complete cutlery set, increasing their value, and highlighting the beauty of the wood.</p>
+        <p>The triangular shape was created as a result of the original spoon structure and allows the three parts to be integrated into one whole.</p>
+        <p class="materials">Materials: Readymade bamboo cooking spoon.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/maze-cube.jpg" alt="Wooden maze cube puzzle toy">
+      </div>
+      <div class="project-text">
+        <h2>06. Maze Cube</h2>
+        <p>To make a luxurious wooden toy, I designed a cube that hides a three-dimensional maze with entry and exit holes for a small metal ball.</p>
+        <p>After gluing the layers of wood to form a cube, I used a milling machine to dig a maze track. Each section of the maze was implanted with an adapted part printed on a 3D printer, in order to create a separation between the passage tunnel for the ball, and the upper part on which an epoxy was poured, to hint at the route of the maze.</p>
+        <p class="materials">Materials: Red oak, printed PLA, epoxy and metal ball.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/construction-furniture.jpg" alt="Furniture built from construction site waste materials">
+      </div>
+      <div class="project-text">
+        <h2>07. Construction Furniture</h2>
+        <p>Plastic pipe, scrap metal, and scaffolding wood collected from a construction site's trash and reshaped into a series of furniture.</p>
+        <p>The goal of the project was to bring the materials to a high finish that is desirable and suitable for use at home, but preserves the original identity of the waste and does not remove it.</p>
+        <p>Based on these products, the AURA | One of A Kite series was developed.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/table-for-two.jpg" alt="Table For Two, a balance table for an adult and a child">
+      </div>
+      <div class="project-text">
+        <h2>08. Table For Two</h2>
+        <p>A table designed for a child and an adult in order to create dependency between them while sitting and equalizes their status and height.</p>
+        <p>As the rope that ties two swings passes freely through the bended pipes, the weight differences between the adult and child lower the adult and raise the child. This way balance is created in the sitting height, and both can sit at the table equally. The swing reinforces the shared gaming experience, and produces dependence on the use of the two.</p>
+        <p class="materials">Materials: Steel pipes, plywood, pine wood, climbing rope.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-photo">
+        <img src="images/simplify.jpg" alt="Simplify, a set of minimalist toy vehicles">
+      </div>
+      <div class="project-text">
+        <h2>09. Simplify</h2>
+        <p>A set of toy vehicles, stripped of images of luxury and overload of details. Instead, they are identified based on clear signs that characterize them, such as their outline and the size of their wheels.</p>
+        <p>The project was done as part of a course aimed at large-scale production and the sale of the product. For this purpose, I chose a project that allows the construction of machines and rulers for bending the iron, cutting and drilling the wheels and connecting all the parts together &mdash; all this in order to optimize the work and time as much as possible.</p>
+        <p class="materials">Materials: Iron wires, beech wood, pine wood, 3D printed caps.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <p>Get in touch: <a href="mailto:assafshin@gmail.com">assafshin@gmail.com</a></p>
+  </section>
+
 </main>
-<script src="script.js"></script>
+
+<footer>
+  <p>Assaf Shinfeld / Portfolio</p>
+</footer>
+
 </body>
 </html>

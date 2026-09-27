@@ -1,14 +1,165 @@
-/* TODO: style rules go here */
-header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
+:root {
+  --cream: #fdfcf8;
+  --photo-bg: #f2f1ee;
+  --ink: #1c1c1c;
+  --muted: #767671;
+  --line: #e4e2da;
 }
-nav {
-    display: flex;
-    gap: 20px;
+
+* {
+  box-sizing: border-box;
 }
+
 body {
-    font-family: sans-serif;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+}
+
+h1, h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* --- Header --- */
+
+.site-header {
+  padding: 60px 8vw 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+}
+
+.site-header .tagline {
+  margin: 6px 0 24px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 28px;
+}
+
+.site-header nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+}
+
+.site-header nav a:hover {
+  border-bottom-color: var(--ink);
+}
+
+/* --- About --- */
+
+.about {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 60px 8vw;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* --- Work / projects --- */
+
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  border-top: 1px solid var(--line);
+}
+
+.project-photo {
+  flex: 0 0 34%;
+  background: var(--photo-bg);
+}
+
+.project-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-text {
+  flex: 1;
+  padding: 60px 6vw;
+  max-width: 720px;
+}
+
+.project-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.project-text h2 .divider {
+  color: var(--muted);
+  margin: 0 8px;
+  font-weight: 300;
+}
+
+.project-text p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.project-text .materials {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-gallery {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+/* --- Contact & footer --- */
+
+.contact {
+  padding: 60px 8vw;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+.contact a {
+  color: var(--ink);
+}
+
+footer {
+  padding: 24px 8vw;
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* --- Responsive: stack photo above text on narrow screens --- */
+
+@media (max-width: 800px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-photo {
+    flex-basis: auto;
+    max-height: 60vh;
+  }
+  .project-gallery {
+    flex-direction: column;
+  }
 }
