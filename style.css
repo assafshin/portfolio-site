@@ -19,7 +19,7 @@ body {
 }
 
 .site-header, main {
-  max-width: 1500px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--gutter);
@@ -141,7 +141,11 @@ h1, h2 {
 .project-text {
   flex: 1;
   padding: 60px 0 60px 6vw;
-  max-width: 720px;
+}
+
+.project-text p,
+.project-text .materials {
+  max-width: 640px;
 }
 
 .project-text h2 {
